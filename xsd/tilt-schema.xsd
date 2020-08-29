@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created with Liquid Studio 2020 (https://www.liquid-technologies.com)-->
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="meta" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation>Meta information for the identification and verification of the document.</xs:documentation>
+            <xs:documentation>Generated for JSON property 'meta'</xs:documentation>
+            <xs:documentation>JSON Schema (249:18) '/properties/meta' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="_id" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>The ID follows the database-specific implementation and does not have to be set in advance; but should offer as much entropy as possible for globally unique identifiers.</xs:documentation>
+                  <xs:documentation>Generated for JSON property '_id'</xs:documentation>
+                  <xs:documentation>JSON Schema (280:22) '/properties/meta/properties/_id' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="name" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>Name of the data controller.</xs:documentation>
+                  <xs:documentation>Generated for JSON property 'name'</xs:documentation>
+                  <xs:documentation>JSON Schema (289:10) '/properties/meta/properties/name' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="created" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>Creation date of the document as an ISO-8601 time code.</xs:documentation>
+                  <xs:documentation>Generated for JSON property 'created'</xs:documentation>
+                  <xs:documentation>JSON Schema (298:10) '/properties/meta/properties/created' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="modified" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>Last modified date of the document as an ISO-8601 time code.</xs:documentation>
+                  <xs:documentation>Generated for JSON property 'modified'</xs:documentation>
+                  <xs:documentation>JSON Schema (308:10) '/properties/meta/properties/modified' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="version" type="xs:integer" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>This number serves to version documents of a controller.</xs:documentation>
+                  <xs:documentation>Generated for JSON property 'version'</xs:documentation>
+                  <xs:documentation>JSON Schema (318:10) '/properties/meta/properties/version' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="language" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>All language abbreviation codes follow the established ISO 639-1 standard as identifiers for names of languages.</xs:documentation>
+                  <xs:documentation>Generated for JSON property 'language'</xs:documentation>
+                  <xs:documentation>JSON Schema (329:10) '/properties/meta/properties/language' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="status" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>The status of an instance can be active or inactive depending on the policy's legal force.</xs:documentation>
+                  <xs:documentation>Generated for JSON property 'status'</xs:documentation>
+                  <xs:documentation>JSON Schema (340:10) '/properties/meta/properties/status' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="url" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>URL to this schema.</xs:documentation>
+                  <xs:documentation>Generated for JSON property 'url'</xs:documentation>
+                  <xs:documentation>JSON Schema (352:10) '/properties/meta/properties/url' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="_hash" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>The hash is based on one SHA256 calculation of the document.</xs:documentation>
+                  <xs:documentation>Generated for JSON property '_hash'</xs:documentation>
+                  <xs:documentation>JSON Schema (362:10) '/properties/meta/properties/_hash' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="AdditionalProperties" type="xs:anyType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>Generated for JSON additional properties</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="controller" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation>The responsible controller is defined in here.</xs:documentation>
+            <xs:documentation>Generated for JSON property 'controller'</xs:documentation>
+            <xs:documentation>JSON Schema (375:6) '/properties/controller' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="name" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>Name of the controller.</xs:documentation>
+                  <xs:documentation>Generated for JSON property 'name'</xs:documentation>
+                  <xs:documentation>JSON Schema (401:22) '/properties/controller/properties/name' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="division" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>Serves to differentiate between different areas of a company; particularly relevant for large companies.</xs:documentation>
+                  <xs:documentation>Generated for JSON property 'division'</xs:documentation>
+                  <xs:documentation>JSON Schema (410:10) '/properties/controller/properties/division' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="address" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>Address of the controller.</xs:documentation>
+                  <xs:documentation>Generated for JSON property 'address'</xs:documentation>
+                  <xs:documentation>JSON Schema (419:10) '/properties/controller/properties/address' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="country" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>All country codes follow the established ones ISO 3166 country abbreviation standard.</xs:documentation>
+                  <xs:documentation>Generated for JSON property 'country'</xs:documentation>
+                  <xs:documentation>JSON Schema (428:10) '/properties/controller/properties/country' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="representative" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>The representative is a responsible real person that represents the controller.</xs:documentation>
+                  <xs:documentation>Generated for JSON property 'representative'</xs:documentation>
+                  <xs:documentation>JSON Schema (441:10) '/properties/controller/properties/representative' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="name" type="xs:string" minOccurs="0" maxOccurs="1">
+                      <xs:annotation>
+                        <xs:documentation>Name of the controller's representative.</xs:documentation>
+                        <xs:documentation>Generated for JSON property 'name'</xs:documentation>
+                        <xs:documentation>JSON Schema (459:26) '/properties/controller/properties/representative/properties/name' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="email" type="xs:string" minOccurs="0" maxOccurs="1">
+                      <xs:annotation>
+                        <xs:documentation>Email address of the controller's representative.</xs:documentation>
+                        <xs:documentation>Generated for JSON property 'email'</xs:documentation>
+                        <xs:documentation>JSON Schema (468:14) '/properties/controller/properties/representative/properties/email' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="phone" type="xs:string" minOccurs="0" maxOccurs="1">
+                      <xs:annotation>
+                        <xs:documentation>Phone number of the controller's representative.</xs:documentation>
+                        <xs:documentation>Generated for JSON property 'phone'</xs:documentation>
+                        <xs:documentation>JSON Schema (478:14) '/properties/controller/properties/representative/properties/phone' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="AdditionalProperties" type="xs:anyType" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:documentation>Generated for JSON additional properties</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="AdditionalProperties" type="xs:anyType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>Generated for JSON additional properties</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dataProtectionOfficer" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation>The Data Protection Officer (DPO) of the controller.</xs:documentation>
+            <xs:documentation>Generated for JSON property 'dataProtectionOfficer'</xs:documentation>
+            <xs:documentation>JSON Schema (492:6) '/properties/dataProtectionOfficer' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="name" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>The full name of the Data Protection Officer.</xs:documentation>
+                  <xs:documentation>Generated for JSON property 'name'</xs:documentation>
+                  <xs:documentation>JSON Schema (514:22) '/properties/dataProtectionOfficer/properties/name' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="address" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>Address of the DPO.</xs:documentation>
+                  <xs:documentation>Generated for JSON property 'address'</xs:documentation>
+                  <xs:documentation>JSON Schema (523:10) '/properties/dataProtectionOfficer/properties/address' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="country" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>The country in which the Data Protection officer is located at.</xs:documentation>
+                  <xs:documentation>Generated for JSON property 'country'</xs:documentation>
+                  <xs:documentation>JSON Schema (532:10) '/properties/dataProtectionOfficer/properties/country' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="email" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>The contact email address of the Data Protection Officer.</xs:documentation>
+                  <xs:documentation>Generated for JSON property 'email'</xs:documentation>
+                  <xs:documentation>JSON Schema (544:10) '/properties/dataProtectionOfficer/properties/email' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="phone" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>The phone number of the Data Protection Officer (may include country prefix).</xs:documentation>
+                  <xs:documentation>Generated for JSON property 'phone'</xs:documentation>
+                  <xs:documentation>JSON Schema (554:10) '/properties/dataProtectionOfficer/properties/phone' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="AdditionalProperties" type="xs:anyType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>Generated for JSON additional properties</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dataDisclosed" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation>A detailed explanation about which data is disclosed in the processing tasks.</xs:documentation>
+            <xs:documentation>Generated for JSON property 'dataDisclosed'</xs:documentation>
+            <xs:documentation>JSON Schema (566:6) '/properties/dataDisclosed' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Item" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>Generated for JSON Array item index 0-n</xs:documentation>
+                  <xs:documentation>JSON Schema (646:30) '/properties/dataDisclosed/items[0]' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="AdditionalProperties" type="xs:anyType" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:documentation>Generated for JSON additional properties</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="thirdCountryTransfers" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation>This schema refers to the adequacy decisions of any third country transfers.</xs:documentation>
+            <xs:documentation>Generated for JSON property 'thirdCountryTransfers'</xs:documentation>
+            <xs:documentation>JSON Schema (1381:6) '/properties/thirdCountryTransfers' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Item" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>Generated for JSON Array item index 0-n</xs:documentation>
+                  <xs:documentation>JSON Schema (1410:30) '/properties/thirdCountryTransfers/items[0]' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="AdditionalProperties" type="xs:anyType" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:documentation>Generated for JSON additional properties</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="accessAndDataPortability" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation>Defining the right to access and data portability.</xs:documentation>
+            <xs:documentation>Generated for JSON property 'accessAndDataPortability'</xs:documentation>
+            <xs:documentation>JSON Schema (1657:6) '/properties/accessAndDataPortability' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="available" type="xs:boolean" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>The information is subject to the requirements of Art. 20 (right to data portability) GDPR.</xs:documentation>
+                  <xs:documentation>Generated for JSON property 'available'</xs:documentation>
+                  <xs:documentation>JSON Schema (1684:22) '/properties/accessAndDataPortability/properties/available' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="description" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>Description of the requirements according to Art. 20 GDPR.</xs:documentation>
+                  <xs:documentation>Generated for JSON property 'description'</xs:documentation>
+                  <xs:documentation>JSON Schema (1694:10) '/properties/accessAndDataPortability/properties/description' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="url" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>URL to relevant resources such as access portals.</xs:documentation>
+                  <xs:documentation>Generated for JSON property 'url'</xs:documentation>
+                  <xs:documentation>JSON Schema (1704:10) '/properties/accessAndDataPortability/properties/url' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="email" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>Contact email address</xs:documentation>
+                  <xs:documentation>Generated for JSON property 'email'</xs:documentation>
+                  <xs:documentation>JSON Schema (1714:10) '/properties/accessAndDataPortability/properties/email' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="identificationEvidences" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>ID evidences</xs:documentation>
+                  <xs:documentation>Generated for JSON property 'identificationEvidences'</xs:documentation>
+                  <xs:documentation>JSON Schema (1724:10) '/properties/accessAndDataPortability/properties/identificationEvidences' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Item" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:documentation>Generated for JSON Array item index 0-n</xs:documentation>
+                        <xs:documentation>JSON Schema (1736:34) '/properties/accessAndDataPortability/properties/identificationEvidences/items[0]' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="administrativeFee" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>The fee that refers to several copies.</xs:documentation>
+                  <xs:documentation>Generated for JSON property 'administrativeFee'</xs:documentation>
+                  <xs:documentation>JSON Schema (1751:10) '/properties/accessAndDataPortability/properties/administrativeFee' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="amount" type="xs:double" minOccurs="0" maxOccurs="1">
+                      <xs:annotation>
+                        <xs:documentation>The amount of money to be paid for a copy.</xs:documentation>
+                        <xs:documentation>Generated for JSON property 'amount'</xs:documentation>
+                        <xs:documentation>JSON Schema (1768:26) '/properties/accessAndDataPortability/properties/administrativeFee/properties/amount' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="currency" type="xs:string" minOccurs="0" maxOccurs="1">
+                      <xs:annotation>
+                        <xs:documentation>The currency in which the amount of money for one copy has to be provided acc. to ISO 4217.</xs:documentation>
+                        <xs:documentation>Generated for JSON property 'currency'</xs:documentation>
+                        <xs:documentation>JSON Schema (1778:14) '/properties/accessAndDataPortability/properties/administrativeFee/properties/currency' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="AdditionalProperties" type="xs:anyType" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:documentation>Generated for JSON additional properties</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="dataFormats" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>An explanation about the data format(s) the data is provided in.</xs:documentation>
+                  <xs:documentation>Generated for JSON property 'dataFormats'</xs:documentation>
+                  <xs:documentation>JSON Schema (1792:10) '/properties/accessAndDataPortability/properties/dataFormats' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Item" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:documentation>Generated for JSON Array item index 0-n</xs:documentation>
+                        <xs:documentation>JSON Schema (1804:12) '/properties/accessAndDataPortability/properties/dataFormats/items[0]' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="AdditionalProperties" type="xs:anyType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>Generated for JSON additional properties</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="sources" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation>This duty to provide information is limited to the collection of personal data that does not take place from the data subject (Art. 14).</xs:documentation>
+            <xs:documentation>Generated for JSON property 'sources'</xs:documentation>
+            <xs:documentation>JSON Schema (1821:6) '/properties/sources' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Item" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>Generated for JSON Array item index 0-n</xs:documentation>
+                  <xs:documentation>JSON Schema (1842:30) '/properties/sources/items[0]' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="AdditionalProperties" type="xs:anyType" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:documentation>Generated for JSON additional properties</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="rightToInformation" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation>Refers to the right of information.</xs:documentation>
+            <xs:documentation>Generated for JSON property 'rightToInformation'</xs:documentation>
+            <xs:documentation>JSON Schema (1963:6) '/properties/rightToInformation' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="available" type="xs:boolean" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>Possibility available?</xs:documentation>
+                  <xs:documentation>Generated for JSON property 'available'</xs:documentation>
+                  <xs:documentation>JSON Schema (1997:22) '/properties/rightToInformation/properties/available' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="description" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>Description of the right.</xs:documentation>
+                  <xs:documentation>Generated for JSON property 'description'</xs:documentation>
+                  <xs:documentation>JSON Schema (2007:10) '/properties/rightToInformation/properties/description' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="url" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>URL to an online portal.</xs:documentation>
+                  <xs:documentation>Generated for JSON property 'url'</xs:documentation>
+                  <xs:documentation>JSON Schema (2016:10) '/properties/rightToInformation/properties/url' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="email" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>Generated for JSON property 'email'</xs:documentation>
+                  <xs:documentation>JSON Schema (2026:10) '/properties/rightToInformation/properties/email' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="identificationEvidences" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>Generated for JSON property 'identificationEvidences'</xs:documentation>
+                  <xs:documentation>JSON Schema (2035:10) '/properties/rightToInformation/properties/identificationEvidences' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Item" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:documentation>Generated for JSON Array item index 0-n</xs:documentation>
+                        <xs:documentation>JSON Schema (2046:34) '/properties/rightToInformation/properties/identificationEvidences/items[0]' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="AdditionalProperties" type="xs:anyType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>Generated for JSON additional properties</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="rightToRectificationOrDeletion" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation>This schema refers to the right to rectification or deletion (Art. 16 GDPR).</xs:documentation>
+            <xs:documentation>Generated for JSON property 'rightToRectificationOrDeletion'</xs:documentation>
+            <xs:documentation>JSON Schema (2063:6) '/properties/rightToRectificationOrDeletion' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="available" type="xs:boolean" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>Possibility available?</xs:documentation>
+                  <xs:documentation>Generated for JSON property 'available'</xs:documentation>
+                  <xs:documentation>JSON Schema (2097:22) '/properties/rightToRectificationOrDeletion/properties/available' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="description" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>Generated for JSON property 'description'</xs:documentation>
+                  <xs:documentation>JSON Schema (2108:10) '/properties/rightToRectificationOrDeletion/properties/description' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="url" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>Generated for JSON property 'url'</xs:documentation>
+                  <xs:documentation>JSON Schema (2116:10) '/properties/rightToRectificationOrDeletion/properties/url' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="email" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>Generated for JSON property 'email'</xs:documentation>
+                  <xs:documentation>JSON Schema (2125:10) '/properties/rightToRectificationOrDeletion/properties/email' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="identificationEvidences" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>Generated for JSON property 'identificationEvidences'</xs:documentation>
+                  <xs:documentation>JSON Schema (2134:10) '/properties/rightToRectificationOrDeletion/properties/identificationEvidences' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Item" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:documentation>Generated for JSON Array item index 0-n</xs:documentation>
+                        <xs:documentation>JSON Schema (2145:34) '/properties/rightToRectificationOrDeletion/properties/identificationEvidences/items[0]' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="AdditionalProperties" type="xs:anyType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>Generated for JSON additional properties</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="rightToDataPortability" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation>The right to data portability as stated in Art. 20 GDPR.</xs:documentation>
+            <xs:documentation>Generated for JSON property 'rightToDataPortability'</xs:documentation>
+            <xs:documentation>JSON Schema (2162:6) '/properties/rightToDataPortability' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="available" type="xs:boolean" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>Generated for JSON property 'available'</xs:documentation>
+                  <xs:documentation>JSON Schema (2195:22) '/properties/rightToDataPortability/properties/available' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="description" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>Generated for JSON property 'description'</xs:documentation>
+                  <xs:documentation>JSON Schema (2205:10) '/properties/rightToDataPortability/properties/description' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="url" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>Generated for JSON property 'url'</xs:documentation>
+                  <xs:documentation>JSON Schema (2213:10) '/properties/rightToDataPortability/properties/url' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="email" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>Generated for JSON property 'email'</xs:documentation>
+                  <xs:documentation>JSON Schema (2222:10) '/properties/rightToDataPortability/properties/email' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="identificationEvidences" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>Generated for JSON property 'identificationEvidences'</xs:documentation>
+                  <xs:documentation>JSON Schema (2231:10) '/properties/rightToDataPortability/properties/identificationEvidences' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Item" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:documentation>Generated for JSON Array item index 0-n</xs:documentation>
+                        <xs:documentation>JSON Schema (2241:34) '/properties/rightToDataPortability/properties/identificationEvidences/items[0]' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="AdditionalProperties" type="xs:anyType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>Generated for JSON additional properties</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="rightToWithdrawConsent" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation>This schema refers to the right to withdraw consent.</xs:documentation>
+            <xs:documentation>Generated for JSON property 'rightToWithdrawConsent'</xs:documentation>
+            <xs:documentation>JSON Schema (2257:6) '/properties/rightToWithdrawConsent' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="available" type="xs:boolean" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>Generated for JSON property 'available'</xs:documentation>
+                  <xs:documentation>JSON Schema (2290:22) '/properties/rightToWithdrawConsent/properties/available' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="description" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>Generated for JSON property 'description'</xs:documentation>
+                  <xs:documentation>JSON Schema (2300:10) '/properties/rightToWithdrawConsent/properties/description' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="url" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>Generated for JSON property 'url'</xs:documentation>
+                  <xs:documentation>JSON Schema (2308:10) '/properties/rightToWithdrawConsent/properties/url' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="email" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>Generated for JSON property 'email'</xs:documentation>
+                  <xs:documentation>JSON Schema (2317:10) '/properties/rightToWithdrawConsent/properties/email' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="identificationEvidences" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>Generated for JSON property 'identificationEvidences'</xs:documentation>
+                  <xs:documentation>JSON Schema (2326:10) '/properties/rightToWithdrawConsent/properties/identificationEvidences' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Item" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:documentation>Generated for JSON Array item index 0-n</xs:documentation>
+                        <xs:documentation>JSON Schema (2336:34) '/properties/rightToWithdrawConsent/properties/identificationEvidences/items[0]' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="AdditionalProperties" type="xs:anyType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>Generated for JSON additional properties</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="rightToComplain" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation>This schema refers to the right to complain.</xs:documentation>
+            <xs:documentation>Generated for JSON property 'rightToComplain'</xs:documentation>
+            <xs:documentation>JSON Schema (2352:6) '/properties/rightToComplain' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="available" type="xs:boolean" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>Is this right available?</xs:documentation>
+                  <xs:documentation>Generated for JSON property 'available'</xs:documentation>
+                  <xs:documentation>JSON Schema (2394:22) '/properties/rightToComplain/properties/available' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="description" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>Generated for JSON property 'description'</xs:documentation>
+                  <xs:documentation>JSON Schema (2405:10) '/properties/rightToComplain/properties/description' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="url" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>Generated for JSON property 'url'</xs:documentation>
+                  <xs:documentation>JSON Schema (2413:10) '/properties/rightToComplain/properties/url' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="email" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>Generated for JSON property 'email'</xs:documentation>
+                  <xs:documentation>JSON Schema (2422:10) '/properties/rightToComplain/properties/email' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="identificationEvidences" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>Generated for JSON property 'identificationEvidences'</xs:documentation>
+                  <xs:documentation>JSON Schema (2431:10) '/properties/rightToComplain/properties/identificationEvidences' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Item" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:documentation>Generated for JSON Array item index 0-n</xs:documentation>
+                        <xs:documentation>JSON Schema (2442:34) '/properties/rightToComplain/properties/identificationEvidences/items[0]' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="supervisoryAuthority" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>Defines the supervisory authority that has to be contacted in order to complain about the data controller's practices.</xs:documentation>
+                  <xs:documentation>Generated for JSON property 'supervisoryAuthority'</xs:documentation>
+                  <xs:documentation>JSON Schema (2457:10) '/properties/rightToComplain/properties/supervisoryAuthority' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="name" type="xs:string" minOccurs="0" maxOccurs="1">
+                      <xs:annotation>
+                        <xs:documentation>Name of the supervisory authority.</xs:documentation>
+                        <xs:documentation>Generated for JSON property 'name'</xs:documentation>
+                        <xs:documentation>JSON Schema (2476:26) '/properties/rightToComplain/properties/supervisoryAuthority/properties/name' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="address" type="xs:string" minOccurs="0" maxOccurs="1">
+                      <xs:annotation>
+                        <xs:documentation>Adress of the supervisory authority.</xs:documentation>
+                        <xs:documentation>Generated for JSON property 'address'</xs:documentation>
+                        <xs:documentation>JSON Schema (2485:14) '/properties/rightToComplain/properties/supervisoryAuthority/properties/address' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="country" type="xs:string" minOccurs="0" maxOccurs="1">
+                      <xs:annotation>
+                        <xs:documentation>Country of the supervisory authority.</xs:documentation>
+                        <xs:documentation>Generated for JSON property 'country'</xs:documentation>
+                        <xs:documentation>JSON Schema (2494:14) '/properties/rightToComplain/properties/supervisoryAuthority/properties/country' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="email" type="xs:string" minOccurs="0" maxOccurs="1">
+                      <xs:annotation>
+                        <xs:documentation>Email adress of the supervisory authority.</xs:documentation>
+                        <xs:documentation>Generated for JSON property 'email'</xs:documentation>
+                        <xs:documentation>JSON Schema (2505:14) '/properties/rightToComplain/properties/supervisoryAuthority/properties/email' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="phone" type="xs:string" minOccurs="0" maxOccurs="1">
+                      <xs:annotation>
+                        <xs:documentation>Phone number of the supervisory authority.</xs:documentation>
+                        <xs:documentation>Generated for JSON property 'phone'</xs:documentation>
+                        <xs:documentation>JSON Schema (2515:14) '/properties/rightToComplain/properties/supervisoryAuthority/properties/phone' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="AdditionalProperties" type="xs:anyType" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:documentation>Generated for JSON additional properties</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="AdditionalProperties" type="xs:anyType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>Generated for JSON additional properties</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="automatedDecisionMaking" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation>Automated decision making and potentially involved logic. Does include profiling.</xs:documentation>
+            <xs:documentation>Generated for JSON property 'automatedDecisionMaking'</xs:documentation>
+            <xs:documentation>JSON Schema (2529:6) '/properties/automatedDecisionMaking' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="inUse" type="xs:boolean" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>Is automated decision making in use?</xs:documentation>
+                  <xs:documentation>Generated for JSON property 'inUse'</xs:documentation>
+                  <xs:documentation>JSON Schema (2559:22) '/properties/automatedDecisionMaking/properties/inUse' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="logicInvolved" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>An explanation about the logic involved to automated decision making.</xs:documentation>
+                  <xs:documentation>Generated for JSON property 'logicInvolved'</xs:documentation>
+                  <xs:documentation>JSON Schema (2570:10) '/properties/automatedDecisionMaking/properties/logicInvolved' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="scopeAndIntendedEffects" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:documentation>Scope and intended effects of such processing for the data subject.</xs:documentation>
+                  <xs:documentation>Generated for JSON property 'scopeAndIntendedEffects'</xs:documentation>
+                  <xs:documentation>JSON Schema (2579:10) '/properties/automatedDecisionMaking/properties/scopeAndIntendedEffects' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="AdditionalProperties" type="xs:anyType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>Generated for JSON additional properties</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="changesOfPurpose" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation>Notification of change of purpose.</xs:documentation>
+            <xs:documentation>Generated for JSON property 'changesOfPurpose'</xs:documentation>
+            <xs:documentation>JSON Schema (2590:6) '/properties/changesOfPurpose' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Item" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>Generated for JSON Array item index 0-n</xs:documentation>
+                  <xs:documentation>JSON Schema (2609:30) '/properties/changesOfPurpose/items[0]' - C:\Users\Elias\Desktop\schema\tilt-schema.json</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="AdditionalProperties" type="xs:anyType" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:documentation>Generated for JSON additional properties</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AdditionalProperties" type="xs:anyType" minOccurs="0" maxOccurs="unbounded">
+          <xs:annotation>
+            <xs:documentation>Generated for JSON additional properties</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
