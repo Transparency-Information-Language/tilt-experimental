@@ -1,0 +1,242 @@
+{
+  type: 'object',
+  title: 'Root schema of a Transparency Information Language',
+  description: 'This schema defines the Transparency Information Language',
+  default: {},
+  required: [
+    'meta',
+    'controller',
+    'dataProtectionOfficer',
+    'dataDisclosed',
+    'thirdCountryTransfers',
+    'accessAndDataPortability',
+    'sources',
+    'rightToInformation',
+    'rightToRectificationOrDeletion',
+    'rightToDataPortability',
+    'rightToWithdrawConsent',
+    'rightToComplain',
+    'automatedDecisionMaking',
+    'changesOfPurpose'
+  ],
+  additionalProperties: true,
+  properties: {
+    meta: {
+      type: 'object',
+      title: 'The meta schema',
+      description: 'An explanation about the purpose of this instance.',
+      default: {},
+      required: [Array],
+      additionalProperties: true,
+      properties: [Object],
+      example: [Object]
+    },
+    controller: {
+      type: 'object',
+      title: 'The controller schema',
+      description: 'An explanation about the purpose of this instance.',
+      default: {},
+      required: [Array],
+      additionalProperties: true,
+      properties: [Object],
+      example: [Object]
+    },
+    dataProtectionOfficer: {
+      type: 'object',
+      title: 'The dataProtectionOfficer schema',
+      description: 'An explanation about the purpose of this instance.',
+      default: {},
+      required: [Array],
+      additionalProperties: true,
+      properties: [Object],
+      example: [Object]
+    },
+    dataDisclosed: {
+      type: 'array',
+      title: 'The dataDisclosed schema',
+      description: 'An explanation about the purpose of this instance.',
+      default: [],
+      additionalItems: true,
+      items: [Object],
+      example: [Array]
+    },
+    thirdCountryTransfers: {
+      type: 'array',
+      title: 'The thirdCountryTransfers schema',
+      description: 'An explanation about the purpose of this instance.',
+      default: [],
+      additionalItems: true,
+      items: [Object],
+      example: [Array]
+    },
+    accessAndDataPortability: {
+      type: 'object',
+      title: 'The accessAndDataPortability schema',
+      description: 'An explanation about the purpose of this instance.',
+      default: {},
+      required: [Array],
+      additionalProperties: true,
+      properties: [Object],
+      example: [Object]
+    },
+    sources: {
+      type: 'array',
+      title: 'The sources schema',
+      description: 'An explanation about the purpose of this instance.',
+      default: [],
+      additionalItems: true,
+      items: [Object],
+      example: [Array]
+    },
+    rightToInformation: {
+      type: 'object',
+      title: 'The rightToInformation schema',
+      description: 'An explanation about the purpose of this instance.',
+      default: {},
+      required: [Array],
+      additionalProperties: true,
+      properties: [Object],
+      example: [Object]
+    },
+    rightToRectificationOrDeletion: {
+      type: 'object',
+      title: 'The rightToRectificationOrDeletion schema',
+      description: 'An explanation about the purpose of this instance.',
+      default: {},
+      required: [Array],
+      additionalProperties: true,
+      properties: [Object],
+      example: [Object]
+    },
+    rightToDataPortability: {
+      type: 'object',
+      title: 'The rightToDataPortability schema',
+      description: 'An explanation about the purpose of this instance.',
+      default: {},
+      required: [Array],
+      additionalProperties: true,
+      properties: [Object],
+      example: [Object]
+    },
+    rightToWithdrawConsent: {
+      type: 'object',
+      title: 'The rightToWithdrawConsent schema',
+      description: 'An explanation about the purpose of this instance.',
+      default: {},
+      required: [Array],
+      additionalProperties: true,
+      properties: [Object],
+      example: [Object]
+    },
+    rightToComplain: {
+      type: 'object',
+      title: 'The rightToComplain schema',
+      description: 'An explanation about the purpose of this instance.',
+      default: {},
+      required: [Array],
+      additionalProperties: true,
+      properties: [Object],
+      example: [Object]
+    },
+    automatedDecisionMaking: {
+      type: 'object',
+      title: 'The automatedDecisionMaking schema',
+      description: 'An explanation about the purpose of this instance.',
+      default: {},
+      required: [Array],
+      additionalProperties: true,
+      properties: [Object],
+      example: [Object]
+    },
+    changesOfPurpose: {
+      type: 'array',
+      title: 'The changesOfPurpose schema',
+      description: 'An explanation about the purpose of this instance.',
+      default: [],
+      additionalItems: true,
+      items: [Object],
+      example: [Array]
+    }
+  },
+  example: {
+    meta: {
+      _id: 'f1424f86-ca0f-4f0c-9438-43cc00509931',
+      name: 'Green Company',
+      created: '2020-04-03T15:53:05.929588',
+      modified: '2020-04-03T15: 53: 05.929588',
+      version: 2,
+      language: 'de',
+      status: 'active',
+      url: 'https://green-bikes.de/privacy',
+      _hash: 'd732a793562a3e5dc57645a8'
+    },
+    controller: {
+      name: 'Green Company AG',
+      division: 'Product line e-mobility',
+      address: 'Wolfsburger Ring 2, 38440 Berlin',
+      country: 'DE',
+      representative: [Object]
+    },
+    dataProtectionOfficer: {
+      name: 'Jane Super',
+      address: 'Wolfsburger Ring 2, 38440 Berlin',
+      country: 'DE',
+      email: 'contact@greencompany.de',
+      phone: '0049 151 1234 5678'
+    },
+    dataDisclosed: [ [Object] ],
+    thirdCountryTransfers: [ [Object] ],
+    accessAndDataPortability: {
+      available: true,
+      description: 'Data access is possible through...',
+      url: 'https://green-bikes.de/access',
+      email: 'access@greencompany.de',
+      identificationEvidences: [Array],
+      administrativeFee: [Object],
+      dataFormat: 'json'
+    },
+    sources: [ [Object] ],
+    rightToInformation: {
+      available: true,
+      description: 'For the right to information please use this contact form and...',
+      url: 'https://greencompany.org/rightToInformation',
+      email: 'contact@greencompany.de',
+      identificationEvidences: [Array]
+    },
+    rightToRectificationOrDeletion: {
+      available: true,
+      description: 'For the right to rectification please use this contact form and...',
+      url: 'https://greencompany.org/rights',
+      email: 'contact@greencompany.de',
+      identificationEvidences: [Array]
+    },
+    rightToDataPortability: {
+      available: false,
+      description: 'Data portability is only possible when...',
+      url: 'https://greencompany.org/rights',
+      email: 'contact@greencompany.de',
+      identificationEvidences: [Array]
+    },
+    rightToWithdrawConsent: {
+      available: true,
+      description: 'For the right to withdraw consent please use this contact form and...',
+      url: 'https://greencompany.org/rights',
+      email: 'contact@greencompany.de',
+      identificationEvidences: [Array]
+    },
+    rightToComplain: {
+      available: true,
+      description: 'For the right to complain please use this contact form and...',
+      url: 'https://greencompany.org/rights',
+      email: 'contact@greencompany.de',
+      identificationEvidences: [Array],
+      supervisoryAuthority: [Object]
+    },
+    automatedDecisionMaking: {
+      inUse: true,
+      logicInvolved: 'The personal data are processed as follows...',
+      scopeAndIntendedEffects: 'From processing follows...'
+    },
+    changesOfPurpose: [ [Object] ]
+  }
+}
